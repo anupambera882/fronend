@@ -48,3 +48,22 @@ li a:active {
     clear: both;
     content: "";
 }
+
+p::first-line {
+    color: #ff0000;
+    font-variant: small-caps;
+    background: #000;
+    word-spacing: 10ch;
+    letter-spacing: 5ch;
+    text-decoration: double;
+    vertical-align: auto;
+    text-transform: uppercase;
+    line-height: 4ch;
+    /* clear: both; */
+}
+
+
+p::first-letter {
+    color: #ff0000;
+    font-size: xx-large;
+}
