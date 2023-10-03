@@ -12,17 +12,17 @@
 
 <body>
   <header>
-    <nav class="clear">
+    <!-- <nav class="clear">
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">News</a></li>
         <li><a href="#">Contact</a></li>
         <li><a href="#">About</a></li>
       </ul>
-    </nav>
+    </nav> -->
   </header>
   <main>
-    <div class="container">
+    <!-- <div class="container">
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -46,7 +46,7 @@
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-    </div>
+    </div> -->
     <div class="main-box clear">
       <div class="s-box">card 1</div>
       <div class="s-box">card 2</div>
@@ -74,8 +74,8 @@
       facilis iure. Consequuntur quia nihil voluptate, ad nemo qui omnis reprehenderit excepturi nostrum error.
       Non, impedit. Non soluta repudiandae eligendi voluptatibus. Consequatur suscipit dolorem distinctio porro,
       voluptatem quis voluptate? Iusto at harum doloribus atque!</p>
-
     <div>
+      <br><br><br>
       <!-- bookmarks -->
       <h1>My Bookmarks</h1>
       <h2>primary Bookmarks</h2>
@@ -146,9 +146,40 @@
       <li>go</li>
       <li>python</li>
     </ul>
+    <!-- form -->
+    <form action="/submit" method="post">
+      <!-- Text input for username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" required placeholder="Enter your user name" autofocus>
+      <br><br>
+
+      <!-- Password input -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+        required>
+      <br><br>
+
+      <!-- Radio buttons for gender -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male">
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <br><br>
+      <textarea name="comment" rows="4" cols="50" placeholder="Enter your comment here...">
+      </textarea>
+      <!-- Submit button -->
+      <input type="submit" value="Submit">
+      <select name="fruits">
+        <option value="apple">Apple</option>
+        <option value="banana">Banana</option>
+        <option value="cherry">Cherry</option>
+      </select>
+    </form>
   </main>
   <footer>
-    This is footer
+    <!-- This is footer -->
   </footer>
   <!-- <script src="js/bootstrap.js"></script> -->
   <script src="script.js"></script>
