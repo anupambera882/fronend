@@ -67,3 +67,13 @@ p::first-letter {
     color: #ff0000;
     font-size: xx-large;
 }
+
+body {
+    /* background-color: red; */
+    color: green;
+}
+
+td {
+    margin: 0;
+    border: 2px solid black;
+}
